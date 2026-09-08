@@ -1,0 +1,84 @@
+<svg viewBox="0 0 1200 360" width="1200" height="360" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e1a"/>
+      <stop offset="50%" stop-color="#0d1424"/>
+      <stop offset="100%" stop-color="#060a12"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="20%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#1a2942" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#0a0e1a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="80%" cy="70%" r="40%">
+      <stop offset="0%" stop-color="#1e3a5f" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#0a0e1a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d97757"/>
+      <stop offset="50%" stop-color="#e8a87c"/>
+      <stop offset="100%" stop-color="#d97757"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="360" fill="url(#bg)"/>
+  <rect width="1200" height="360" fill="url(#glow1)"/>
+  <rect width="1200" height="360" fill="url(#glow2)"/>
+
+  <!-- Decorative scan lines -->
+  <g opacity="0.03" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="60" x2="1200" y2="60"/>
+    <line x1="0" y1="120" x2="1200" y2="120"/>
+    <line x1="0" y1="180" x2="1200" y2="180"/>
+    <line x1="0" y1="240" x2="1200" y2="240"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+  </g>
+
+  <!-- Decorative circuit nodes -->
+  <g opacity="0.08" fill="none" stroke="#d97757" stroke-width="1">
+    <circle cx="80" cy="80" r="4"/>
+    <circle cx="80" cy="80" r="12"/>
+    <circle cx="1120" cy="280" r="5"/>
+    <circle cx="1120" cy="280" r="14"/>
+    <circle cx="200" cy="300" r="3"/>
+    <circle cx="1000" cy="60" r="3"/>
+  </g>
+
+  <!-- Decorative paths -->
+  <g opacity="0.05" fill="none" stroke="#d97757" stroke-width="1.5">
+    <path d="M80,80 L200,80 L200,300 L1120,300"/>
+    <path d="M1000,60 L1120,60 L1120,280"/>
+  </g>
+
+  <!-- Corner accents -->
+  <g opacity="0.15" stroke="#d97757" stroke-width="2" fill="none">
+    <path d="M60,40 L60,20 L80,20"/>
+    <path d="M1120,340 L1120,360 L1100,360"/>
+    <path d="M40,320 L20,320 L20,300"/>
+    <path d="M1160,40 L1180,40 L1180,60"/>
+  </g>
+
+  <!-- Top accent line -->
+  <rect x="540" y="95" width="120" height="2" fill="url(#accent)" opacity="0.4"/>
+
+  <!-- Headline -->
+  <text x="600" y="160" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="56.0" font-weight="700" fill="#ffffff">
+    <tspan x="600" dy="0">Claude Opus 5 System Prompt</tspan>
+  </text>
+
+  <!-- Tagline -->
+  <text x="600" y="230" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="20.0" font-weight="400" fill="#c9d1d9">
+    <tspan x="600" dy="0">A scanner for developers and security researchers — checks if your</tspan>
+    <tspan x="600" dy="30">Claude Opus 5 integration leaks system prompts or sensitive instructions.</tspan>
+  </text>
+
+  <!-- Bottom accent line -->
+  <rect x="480" y="290" width="240" height="1" fill="url(#accent)" opacity="0.25"/>
+
+  <!-- Subtle glow dots -->
+  <g opacity="0.12" fill="#d97757">
+    <circle cx="340" cy="270" r="2"/>
+    <circle cx="860" cy="270" r="2"/>
+    <circle cx="600" cy="310" r="1.5"/>
+  </g>
+</svg>
